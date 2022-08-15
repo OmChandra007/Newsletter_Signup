@@ -55,9 +55,6 @@ app.get("/", function(req, res) {
   res.sendFile(__dirname + "/signup.html");
 });
 
-app.post("/failure", function (req, res) {
-    res.redirect("/");
-});
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("Server is running on prot 3000.");
